@@ -1,4 +1,4 @@
-#Kendisine aktarılan bir listenin frekans tablosunu geriye döndüren fonksiyon bir fonksiyon yazma
+#Kendisine aktarılan bir listenin frekans tablosunu geriye döndüren bir fonksiyon yazma
 
 #Sözlük Yöntemi
 
