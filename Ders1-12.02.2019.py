@@ -11,10 +11,8 @@ def generate_an_array(n):
         my_array.append(s)
     return my_array
 
-
 my_arr=[]
 my_arr=generate_an_array(10)
-
 print(my_arr)
 
 
@@ -27,7 +25,6 @@ for i in range(len(my_array)-1,0,-1):
 print(my_array)
 
 
-
 def my_search(array_2,item):
     found=False
     indis=-1
@@ -36,6 +33,4 @@ def my_search(array_2,item):
             found=True
             indis=i
     return (found,indis)
-
-
 print(my_search(my_arr,42))
