@@ -27,6 +27,42 @@ def fibo_rec(n):
        #return n
    #else:
         #return fibo_rec(n-1)+fibo_rec(n-2)
+    
+#Zar için olasilik hesabi 
+from sympy import FiniteSet
+
+t = FiniteSet(1,2,3)
+s = FiniteSet(2,4,6)
+
+t==s
+t.union(s)
+t.intersect(s)
+
+t**2
+
+#olasilik hesaplama
+def probability(space, event):
+  return len(event)/len(space)
+
+#asal mi 
+def check_prime(number):
+  if number!=1:
+    for factor in range(2,number):
+      if number % factor == 0:
+        return False
+  else:
+    return False
+  return True
+
+space = FiniteSet(*range(1,21))
+primes=[]
+for num in space:
+  if check_prime(num):
+    primes.append(num)
+
+event = FiniteSet(*primes)
+p = probability(space, event)
+print(p)    
     if n in known:
         return known[n]
     else:
